@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css" />
+  <script src="js/script.js" defer></script>
+  <script src="js/about.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="logo">About</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="メニューを開閉"></button>
+  </header>
+
+  <!-- オーバーレイ -->
+  <div id="overlay" class="nav-overlay"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <h1>Hello, I'm Hayato</h1>
+      <p>Front-End Developer / Creator / Web designer</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="catchphrase-section fadein">
+      <!-- 左：写真 -->
+      <div class="catchphrase-photo">
+        <img src="images/profile.png" alt="プロフィール写真">
+      </div>
+
+      <!-- 右：キャッチフレーズ＋説明 -->
+      <div class="catchphrase-text">
+        <h2 class="phrase">
+          <span class="phrase-line">丁寧に、着実に。</span>
+          <span class="phrase-line">小さな一歩を、</span>
+          <span class="phrase-line">大きな成長へ。</span>
+        </h2>
+        <p class="phrase-description">
+          一つひとつの作業に真摯に向き合い、焦らず、着実に積み重ねていくことを大切にしています。<br>
+          小さな努力や学びも、やがて大きな成長へとつながると信じています。<br>
+          その思いを、「丁寧に、着実に。小さな一歩を、大きな成長へ。」という言葉に込めました。
+        </p>
+      </div>
+    </section>
+    <section class="career-section fadein">
+      <h2>経歴</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">2018年</span>
+          <p>
+            高等学校卒業後、自動車関連の製造業に就職。<br>
+            慣れない作業に戸惑いながらも、先輩や上司の方々から多くのアドバイスをいただき、日々の業務に取り組んでいました。<br>
+            2年目以降は資格取得を通して任せていただける業務も増え、機械製造の現場で“ものづくり”の楽しさや、目標を達成する喜びを実感しました。
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2023年</span>
+          <p>
+            1月に組立工程から機械加工の業務へ異動。<br>
+            組立とは異なり、機械によるプログラムの呼び出しや加工後の処理など、新たなスキルを学ぶ機会となりました。<br>
+            日々の業務を通して「もっと多くの経験を積みたい」と感じ、9月中旬に退職。<br>
+            その後は派遣社員として働きながら、かねてより興味のあったWebサイト制作への理解を深めるため、Webデザインの勉強を開始しました。
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2024年</span>
+          <p>
+            1月より飲食関係の製造業務に従事しながら、Webデザインの学習を継続。<br>
+            実務経験とは異なる分野への挑戦でしたが、前職で培った行動力や好奇心を活かし、学びを深めてきました。
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2025年</span>
+          <p>
+            1月に飲食製造関係の仕事を離れ、IT企業に就職。<br>
+            経験が少ない中での挑戦ですが、これまでの社会人経験や学習の積み重ねを活かし、新たな環境でも丁寧に業務に取り組んでいます。
+          </p>
+        </div>
+      </div>
+    </section>
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="skills fadein">
+    <h2 class="section-title">スキル</h2>
+    <div class="skills-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">プロジェクトAの説明</div>
+        <div class="project">プロジェクトBの説明</div>
+      </div>
+    </section>
+
+    <section class="hobbies">
+      <h2>Hobbies</h2>
+      <p>写真 / 音楽制作 / ゲーム </p>
+    </section>
+  </main>
+
+  <!-- ===== Footer & Back to Top ===== -->
+  <footer>
+    &copy; 2025 吉平隼斗. All Rights Reserved.
+  </footer>
+  <div id="back-to-top" aria-label="トップへ戻る">▲</div>
+</body>
+
+</html>

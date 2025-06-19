@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>吉平隼斗 ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="logo">HAYATO</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="メニューを開閉"></button>
+  </header>
+
+  <!-- オーバーレイ -->
+  <div id="overlay" class="nav-overlay"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active"><img src="images/hero-image1.png" alt="Slide 1"></div>
+      <div class="hero-slide"><img src="images/hero-image2.png" alt="Slide 2"></div>
+      <div class="hero-slide"><img src="images/hero-image3.png" alt="Slide 3"></div>
+      <div class="hero-slide"><img src="images/hero-image4.png" alt="Slide 4"></div>
+      <div class="hero-slide"><img src="images/hero-image5.png" alt="Slide 5"></div>
+      <div class="hero-dots"></div>
+    </div>
+    <div class="catch">
+      丁寧に、着実に。<br>
+      小さな一歩を、<br>
+      大きな成長へ。
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section about fadein">
+    <h2 class="section-title">自己紹介</h2>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="images/profile.png" alt="プロフィール写真">
+      </div>
+      <div class="about-text">
+        <p>
+          2018年高等学校卒業後、自動車関連の製造業に従事。<br>
+          ものづくりの楽しさを経験し、2025年より IT 分野へ転身。<br>
+          フロントエンドを中心に、ユーザー体験を重視した開発を行っています。<br>
+          これまでの業種とは異なる分野への挑戦で戸惑うこともありますが、<strong>人とのつながり</strong>や<strong>好奇心</strong>、そして<strong>行動力</strong>を大切にしながら、一歩ずつ前進していきたいと考えています。
+        </p>
+        <p class="more-link"><a href="about.html">More →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Works ===== -->
+  <section id="works" class="section works fadein">
+    <h2 class="section-title">制作物</h2>
+    <div class="works-grid">
+      <div class="work-item"><img src="images/sample1.jpg" alt="Work1"></div>
+      <div class="work-item"><img src="images/sample2.jpg" alt="Work2"></div>
+      <div class="work-item"><img src="images/sample3.jpg" alt="Work3"></div>
+      <div class="work-item"><img src="images/sample4.jpg" alt="Work4"></div>
+    </div>
+    <p class="more-link"><a href="works.html">More Works →</a></p>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section fadein">
+    <h2 class="section-title">スキル</h2>
+    <div class="skills-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section fadein">
+    <h2 class="section-title">お問い合わせ</h2>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="お名前" required>
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <textarea name="message" rows="5" placeholder="メッセージ" required></textarea>
+      <button type="submit" class="btn">送信</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer & Back to Top ===== -->
+  <footer>
+    &copy; 2025 吉平隼斗. All Rights Reserved.
+  </footer>
+  <div id="back-to-top" aria-label="トップへ戻る">▲</div>
+</body>
+
+</html>
