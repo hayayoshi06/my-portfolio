@@ -1,7 +1,7 @@
 @charset "uth-8";
 
 /* 全体設定 */
-/* === ベース・リセット === */
+/*  ベース・リセット  */
 *,
 *::before,
 *::after {
@@ -22,7 +22,7 @@ body.no-scroll {
   height: 100vh;
 }
 
-/* === ヘッダー / ナビ === */
+/*  ヘッダー / ナビ  */
 .site-header {
   position: fixed;
   top: 0;
@@ -80,7 +80,7 @@ body.no-scroll {
   width: 100%;
 }
 
-/* オーバーレイ */
+/*  オーバーレイ  */
 .nav-overlay {
   position: fixed;
   inset: 0;
@@ -96,13 +96,12 @@ body.no-scroll {
   pointer-events: auto;
 }
 
-/* メニュー（スマホ用） */
+/*  メニュー（スマホ用）  */
 .menu-toggle {
   display: none;
 }
 
-/* === Hero セクション === */
-/* ---------- Hero スライダー ---------- */
+/*  Hero セクション  */
 .hero {
   display: flex;
   justify-content: center;
@@ -121,7 +120,7 @@ body.no-scroll {
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* Hero スライダー */
+/*  Hero スライダー  */
 .hero-slider {
   position: relative;
   width: 70%;
@@ -150,7 +149,7 @@ body.no-scroll {
   object-fit: cover;
 }
 
-/* キャッチフレーズ */
+/*  キャッチフレーズ  */
 .catch {
   position: relative;
   writing-mode: vertical-rl;
@@ -163,7 +162,7 @@ body.no-scroll {
   font-family: 'Yuji Syuku', cursive;
 }
 
-/* ドットナビ */
+/*  ドットナビ  */
 .hero-dots {
   position: absolute;
   bottom: 8px;
@@ -187,7 +186,7 @@ body.no-scroll {
   background: #fff;
 }
 
-/* === 共通セクション === */
+/*  共通セクション  */
 .section {
   padding: 8rem 10vw;
 }
@@ -211,19 +210,19 @@ body.no-scroll {
   transform: translateX(-50%);
 }
 
-/* === アニメーション === */
-.fadein {
+/*  アニメーション  */
+.fade-in {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity .8s ease, transform .8s ease;
 }
 
-.fadein.show {
+.fade-in.show {
   opacity: 1;
   transform: none;
 }
 
-/* === About === */
+/*  About  */
 .about-container {
   display: flex;
   align-items: center;
@@ -263,7 +262,7 @@ body.no-scroll {
   border-radius: 4px;
 }
 
-/* Moreリンク（色変化させない） */
+/*  Moreリンク（色変化させない）  */
 .more-link a {
   color: inherit;
   text-decoration: none;
@@ -275,7 +274,7 @@ body.no-scroll {
   text-decoration: none;
 }
 
-/* === Works === */
+/*  Works  */
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -291,13 +290,17 @@ body.no-scroll {
   width: 100%;
   display: block;
   transition: transform .5s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .work-item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* === Skills === */
+/*  Skills  */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -311,7 +314,7 @@ body.no-scroll {
   border-radius: 4px;
 }
 
-/* === Contact === */
+/*  Contact  */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -342,7 +345,7 @@ body.no-scroll {
   background: #445963;
 }
 
-/* === Footer === */
+/*  Footer  */
 footer {
   font-size: 0.8rem;
   text-align: center;
@@ -351,7 +354,7 @@ footer {
   color: #fff;
 }
 
-/* === Back to Top === */
+/*  Back to Top  */
 #back-to-top {
   position: fixed;
   right: 2rem;
@@ -376,7 +379,7 @@ footer {
   pointer-events: auto;
 }
 
-/* === Responsive === */
+/*  Responsive  */
 @media (max-width: 768px) {
   .nav {
     position: fixed;
@@ -432,7 +435,7 @@ footer {
     content: "×";
   }
 
-  /* 本体のボタンは文字なしにしておく（中身はJS不要） */
+  /*  本体のボタンは文字なしにしておく  */
 
   .hero {
     flex-direction: column;

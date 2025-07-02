@@ -20,7 +20,7 @@ body.no-scroll {
   height: 100vh;
 }
 
-/*  共通ヘッダー（トップと揃え）   */
+/*  共通ヘッダー（トップと揃え）  */
 .site-header {
   position: fixed;
   top: 0;
@@ -78,7 +78,7 @@ body.no-scroll {
   width: 100%;
 }
 
-/* オーバーレイ */
+/*  オーバーレイ  */
 .nav-overlay {
   position: fixed;
   inset: 0;
@@ -95,12 +95,12 @@ body.no-scroll {
 }
 
 
-/* メニュー（スマホ用） */
+/*  メニュー（スマホ用）  */
 .menu-toggle {
   display: none;
 }
 
-/*  Hero セクション               */
+/*  Hero セクション  */
 .hero {
   height: 100vh;
   position: relative;
@@ -190,19 +190,43 @@ body.no-scroll {
 }
 
 
-/* === アニメーション === */
-.fadein {
+/*  アニメーション  */
+.fade-in {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity .8s ease, transform .8s ease;
 }
 
-.fadein.show {
+.fade-in.show {
   opacity: 1;
   transform: none;
 }
 
-/*  タイムライン（経歴）          */
+/*  共通セクション  */
+.section {
+  padding: 8rem 10vw;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 60%;
+  height: 2px;
+  background: #c1a36b;
+  transform: translateX(-50%);
+}
+
+/*  タイムライン（経歴）  */
 .career-section {
   padding: 4rem 1rem;
 }
@@ -244,16 +268,17 @@ body.no-scroll {
   font-weight: 600;
 }
 
-/*  Skills / Projects / Hobbies   */
+/*  Skills / Projects / Hobbies  */
 .skills,
 .projects,
+.abilities,
 .hobbies {
   padding: 4rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* === Skills === */
+/*  Skills  */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -267,6 +292,40 @@ body.no-scroll {
   border-radius: 4px;
 }
 
+/*  abilities  */
+.skills-flexAll {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.skills-flex-inner {
+  max-width: 340px;
+  text-align: center;
+  background: #f9f9f6;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skills-flex-inner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.skills-title {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.skills-text {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/*  project  */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -281,19 +340,7 @@ body.no-scroll {
   border-radius: 4px;
 }
 
-/*  フェードイン                  */
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: .8s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: none;
-}
-
-/*  Footer                        */
+/*  Footer  */
 footer {
   font-size: 0.8rem;
   text-align: center;
@@ -302,7 +349,7 @@ footer {
   color: #fff;
 }
 
-/* === Back to Top === */
+/*  Back to Top  */
 #back-to-top {
   position: fixed;
   right: 2rem;
@@ -327,7 +374,7 @@ footer {
   pointer-events: auto;
 }
 
-/*  レスポンシブ調整              */
+/*  レスポンシブ調整  */
 @media (max-width: 768px) {
   .nav {
     position: fixed;
@@ -409,6 +456,11 @@ footer {
     white-space: pre;
   }
 
+  .skills-flexAll {
+    flex-direction: column;
+    align-items: center;
+  }
+
   #back-to-top {
     right: 1rem;
     bottom: 1rem;
@@ -417,7 +469,7 @@ footer {
   }
 }
 
-/* スマホ（400px以下）で3行に分ける */
+/*  スマホ（400px以下）で3行に分ける  */
 @media (max-width: 400px) {
   .phrase {
     border: none;
@@ -426,7 +478,7 @@ footer {
     gap: 0.5rem;
   }
 
-  /* 各行に下線（和風） */
+  /*  各行に下線（和風）  */
   .phrase-line {
     display: inline-block;
     border-bottom: 2px solid #b5651d;

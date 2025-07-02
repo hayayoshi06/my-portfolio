@@ -12,7 +12,6 @@
 </head>
 
 <body>
-  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="logo">About</div>
     <nav class="nav">
@@ -26,10 +25,8 @@
     <button class="menu-toggle" aria-label="メニューを開閉"></button>
   </header>
 
-  <!-- オーバーレイ -->
   <div id="overlay" class="nav-overlay"></div>
 
-  <!-- ===== Hero ===== -->
   <section class="hero">
     <video autoplay muted loop playsinline id="bg-video">
       <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
@@ -41,13 +38,11 @@
   </section>
 
   <main>
-    <section class="catchphrase-section fadein">
-      <!-- 左：写真 -->
+    <section class="catchphrase-section fade-in">
       <div class="catchphrase-photo">
         <img src="images/profile.png" alt="プロフィール写真">
       </div>
 
-      <!-- 右：キャッチフレーズ＋説明 -->
       <div class="catchphrase-text">
         <h2 class="phrase">
           <span class="phrase-line">丁寧に、着実に。</span>
@@ -61,8 +56,8 @@
         </p>
       </div>
     </section>
-    <section class="career-section fadein">
-      <h2>経歴</h2>
+    <section class="career-section fade-in">
+      <h2 class="section-title">経歴</h2>
       <div class="timeline">
         <div class="timeline-item">
           <span class="year">2018年</span>
@@ -100,32 +95,53 @@
         </div>
       </div>
     </section>
-  <!-- ===== Skills ===== -->
-  <section id="skills" class="skills fadein">
-    <h2 class="section-title">スキル</h2>
-    <div class="skills-list">
-      <div class="skill">HTML5</div>
-      <div class="skill">CSS3</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Git & GitHub</div>
-    </div>
-  </section>
 
-    <section class="projects">
+    <section id="skills" class="skills fade-in">
+      <h2 class="section-title">スキル</h2>
+      <div class="skills-list">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section class="abilities fade-in">
+      <h2 class="section-title">できること</h2>
+      <div class="skills-flexAll">
+        <div class="skills-flex-inner">
+          <img src="images/graphic_design.avif" alt="グラフィックデザイン">
+          <h4 class="skills-title">グラフィックデザイン</h4>
+          <p class="skills-text">情報を分かりやすく伝え、ユーザーの記憶に残るデザイン</p>
+        </div>
+        <div class="skills-flex-inner">
+          <img src="images/website.avif" alt="Webデザイン">
+          <h4 class="skills-title">Webデザイン</h4>
+          <p class="skills-text">見た目と機能を兼ね備え、使いやすいWebデザイン</p>
+        </div>
+        <div class="skills-flex-inner">
+          <img src="images/coding.avif" alt="コーディング">
+          <h4 class="skills-title">コーディング</h4>
+          <p class="skills-text">HTML、CSS、JavaScriptなどを使い、制作にあたって経験した事を活かしながらコーディング</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="projects">
       <h2>Projects</h2>
       <div class="project-list">
         <div class="project">プロジェクトAの説明</div>
         <div class="project">プロジェクトBの説明</div>
       </div>
-    </section>
+    </section> -->
 
     <section class="hobbies">
       <h2>Hobbies</h2>
-      <p>写真 / 音楽制作 / ゲーム </p>
+      <p>バスケットボール / スノーボード / ゲーム / 写真 </p>
     </section>
   </main>
 
-  <!-- ===== Footer & Back to Top ===== -->
   <footer>
     &copy; 2025 吉平隼斗. All Rights Reserved.
   </footer>

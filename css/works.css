@@ -1,7 +1,7 @@
 @charset "stf-8";
 
 /* 全体設定 */
-/* === ベース・リセット === */
+/*  ベース・リセット  */
 *,
 *::before,
 *::after {
@@ -33,7 +33,7 @@ main {
   flex: 1;
 }
 
-/* === ヘッダー / ナビ === */
+/*  ヘッダー  /  ナビ  */
 .site-header {
   position: fixed;
   top: 0;
@@ -91,7 +91,7 @@ main {
   width: 100%;
 }
 
-/* オーバーレイ */
+/*  オーバーレイ  */
 .nav-overlay {
   position: fixed;
   inset: 0;
@@ -107,7 +107,7 @@ main {
   pointer-events: auto;
 }
 
-/* メニュー（スマホ用） */
+/*  メニュー（スマホ用）  */
 .menu-toggle {
   display: none;
 }
@@ -173,7 +173,7 @@ h2.toggle:hover {
   color: #ffb347;
 }
 
-/* プレビュー画像 */
+/*  プレビュー画像  */
 #preview {
   width: 100%;
   margin-top: 2rem;
@@ -187,7 +187,7 @@ h2.toggle:hover {
   box-shadow: 0 0 10px rgba(255, 127, 80, 0.4);
 }
 
-/*  Footer                        */
+/*  Footer  */
 footer {
   font-size: 0.8rem;
   text-align: center;
@@ -198,7 +198,7 @@ footer {
   border-top: 1px solid #333;
 }
 
-/* === Back to Top === */
+/*  Back to Top  */
 #back-to-top {
   position: fixed;
   right: 2rem;
@@ -223,7 +223,7 @@ footer {
   pointer-events: auto;
 }
 
-/*  レスポンシブ調整              */
+/*  レスポンシブ調整   */
 @media (max-width: 768px) {
   .nav {
     position: fixed;
